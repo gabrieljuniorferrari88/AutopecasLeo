@@ -35,6 +35,7 @@ public class Home extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuArquivo = new javax.swing.JMenu();
         mniCliente = new javax.swing.JMenuItem();
+        mniProduto = new javax.swing.JCheckBoxMenuItem();
         mniVendedor = new javax.swing.JMenuItem();
         mnuSair = new javax.swing.JMenu();
         mniSair = new javax.swing.JMenuItem();
@@ -52,7 +53,7 @@ public class Home extends javax.swing.JFrame {
             .addGap(0, 329, Short.MAX_VALUE)
         );
 
-        mnuArquivo.setText("Arquivo");
+        mnuArquivo.setText("Cadastro");
 
         mniCliente.setText("Cliente");
         mniCliente.addActionListener(new java.awt.event.ActionListener() {
@@ -61,6 +62,10 @@ public class Home extends javax.swing.JFrame {
             }
         });
         mnuArquivo.add(mniCliente);
+
+        mniProduto.setSelected(true);
+        mniProduto.setText("Produto");
+        mnuArquivo.add(mniProduto);
 
         mniVendedor.setText("Vendedor");
         mniVendedor.addActionListener(new java.awt.event.ActionListener() {
@@ -135,6 +140,7 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem mniCliente;
+    private javax.swing.JCheckBoxMenuItem mniProduto;
     private javax.swing.JMenuItem mniSair;
     private javax.swing.JMenuItem mniVendedor;
     private javax.swing.JMenu mnuArquivo;
